@@ -1,95 +1,100 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
 body {
-    line-height: 1;
+  line-height: 1;
 }
+
 ol, ul {
-    list-style: none;
+  list-style: none;
 }
+
 blockquote, q {
-    quotes: none;
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: ‘’;
-    content: none;
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: ‘’;
+  content: none;
 }
+
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
+
 /* Fin du reset */
+
 /* NavBar */
+
 #navbar {
-  margin:auto;
+  position: fixed;
+  width: 100%;
+  margin: auto;
   background: linear-gradient(#1a1a1a, #000000);
 }
 
 nav ul li a {
   text-decoration: none;
-  font-family:Arial;
+  font-family: Courier;
   font-size: 17px;
   padding 0px 5px;
-  color: #ff0000;
+  color: white;
 }
 
 nav ul li a:hover {
-  text-shadow: 1px 0px 20px #F2f2f2;
+  text-shadow: 10px 0px 20px #0080ff;
   transition: 1s;
 }
+
 nav ul {
-  text-align:center;
+  text-align: center;
 }
- nav ul li {
-   display: inline-block;
-   padding: 17px;
- }
+
+nav ul li {
+  display: inline-block;
+  padding: 17px;
+}
 
 /* Fin Navbar */
+
 /* Header */
- #acceuil {
-  background-image: url("/home/userpop/Pop/CV/japan.jpg");
+
+#acceuil {
+  background-image: url("Img/background.jpg");
   background-repeat: no-repeat;
-background-attachment: fixed;
+  background-attachment: fixed;
   background-position: center;
   padding: 220px;
+  height: 42.5vh;
 }
 
 .header h1 {
-  font-family: Arial;
+  font-family: Courier;
   font-size: 60px;
-  color: #e60000;
-  margin-top: -150px;
-  margin-left: -100px;
+  color: #ffffff;
+  margin-top: -8px;
+  font-weight: 400;
+  text-shadow: 1px 0px 10px white;
 }
 
 .header h3 {
-  font-family: Arial;
+  font-family: Courier;
   font-size: 40px;
   color: #000000;
-  margin-top: 20px;
-
+  margin-top: 70px;
+  font-weight: 300;
+  text-shadow: 1px 0px 10px white;
 }
 
 .header {
@@ -98,20 +103,53 @@ background-attachment: fixed;
 
 .explore img {
   width: 150px;
-	height: 150px;
+  height: 150px;
+  position: relative;
+  bottom: -230px;
 }
 
 .explore img:hover {
-  transform: scale(1.5,1.5);
+  transform: scale(1.5, 1.5);
   transition: 1s;
 }
+
 /* Fin header */
+
 /* A Propos */
 
 .text h2 {
-  text-decoration: none;
+  text-decoration: underline;
+  text-align: center;
+  font-family: courier;
+  font-size: 40px;
+  padding-bottom: 30px;
+  color: white;
 }
 
 .text h3 {
+  text-align: center;
+  font-family: courier;
+  font-size: 20px;
+  padding-bottom: 45px;
+  color: white;
+}
+
+.text h3 a {
   text-decoration: none;
+  color: #2b78aa;
+}
+
+.text img {
+  height: 300px;
+  width: 250px;
+  position: relative;
+  border-bottom-left-radius: 75px;
+  border-bottom-right-radius: 75px;
+  border-top-left-radius: 75px;
+  border-top-right-radius: 75px;
+  float: left;
+}
+
+#firstblock {
+  background-color: #1a1a1a;
 }
