@@ -48,12 +48,12 @@ nav ul li a {
   text-decoration: none;
   font-family: Courier;
   font-size: 17px;
-  padding 0px 5px;
+  padding 0 5px;
   color: white;
 }
 
 nav ul li a:hover {
-  text-shadow: 10px 0px 20px #0080ff;
+  text-shadow: 10px 0 20px #0080ff;
   transition: 1s;
 }
 
@@ -70,7 +70,7 @@ nav ul li {
 
 /* Header */
 
-#acceuil {
+.header {
   background-image: url("Img/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -82,19 +82,19 @@ nav ul li {
 .header h1 {
   font-family: Courier;
   font-size: 60px;
-  color: #ffffff;
+  color: #000000;
   margin-top: -8px;
-  font-weight: 400;
+  font-weight: bold;
   text-shadow: 1px 0px 10px white;
 }
 
 .header h3 {
   font-family: Courier;
   font-size: 40px;
-  color: #000000;
+  color: #e2dae2;
   margin-top: 70px;
-  font-weight: 300;
-  text-shadow: 1px 0px 10px white;
+  font-weight: bold;
+  text-shadow: 1px 0px 10px black;
 }
 
 .header {
@@ -117,29 +117,37 @@ nav ul li {
 
 /* A Propos */
 
-.text h2 {
-  text-decoration: underline;
-  text-align: center;
-  font-family: courier;
-  font-size: 40px;
-  padding-bottom: 30px;
-  color: white;
+#apropos {
+  height: 50px;
+  background-color: #322f2f;
 }
 
-.text h3 {
+.textpresent h2 {
+  text-decoration: underline;
+  text-align: center;
+  font-weight: bold;
+  font-family: courier;
+  font-size: 40px;
+  padding-bottom: 45px;
+  color: white;
+  padding-top: 40px;
+}
+
+.textpresent h3 {
   text-align: center;
   font-family: courier;
   font-size: 20px;
-  padding-bottom: 45px;
+  padding-bottom: 50px;
   color: white;
 }
 
-.text h3 a {
+.textpresent h3 a {
   text-decoration: none;
   color: #2b78aa;
+  text-shadow: 1px 0 5px white;
 }
 
-.text img {
+.textpresent img {
   height: 300px;
   width: 250px;
   position: relative;
@@ -148,8 +156,148 @@ nav ul li {
   border-top-left-radius: 75px;
   border-top-right-radius: 75px;
   float: left;
+  padding: 35px;
 }
 
 #firstblock {
   background-color: #1a1a1a;
+}
+
+/* Fin A propos */
+
+/* Formation */
+
+#secondblock {
+  background-color: #322f2f;
+}
+
+.textformation h2 {
+  font-family: Courier;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: underline;
+  padding-top: 40px;
+  padding-bottom: 45px;
+  color: white;
+}
+
+.textformation #img {
+  position: static;
+  height: auto;
+  width: auto;
+  float: right;
+  padding-top: 50px;
+  padding-right: 70px;
+}
+
+.textformation #img img {
+  height: 280px;
+  width: 280px;
+}
+
+.textformation h3 {
+  font-family: Courier;
+  font-size: 27px;
+  color: #707482;
+  font-weight: lighter;
+  margin-bottom: 9px;
+}
+
+.textformation p {
+  font-family: Courier;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.textformation {
+  text-align: center;
+}
+
+.textformation h4 {
+  padding-bottom: 60px;
+  font-family: Courier
+}
+
+/* Fin formation */
+
+/* Contact */
+
+#header2 {
+  background-image: url("Img/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 15px;
+  height: 10vh;
+}
+
+.textcontact #iconmail {
+  float: left;
+  margin-left: 250px;
+  position: static;
+  height: 70px;
+  width: 70px;
+  padding-top: 2.5px;
+}
+
+.textcontact #iconlinkedin {
+  margin-left: 200px;
+  float: left;
+  position: static;
+  height: 70px;
+  width: 70px;
+  padding-top: 2px;
+}
+
+.textcontact #icongit {
+  margin-right: 210px;
+  float: right;
+  position: static;
+  height: 60px;
+  width: 60px;
+  padding-top: 6px;
+}
+
+.textcontact #iconlocation {
+  float: right;
+  margin-right: 250px;
+  position: static;
+  height: 60px;
+  width: 60px;
+  padding-top: 6px;
+}
+
+.textcontact #iconsmartphone {
+  float: center;
+  margin-left: 150px;
+  position: static;
+  height: 60px;
+  width: 60px;
+  padding-top: 6px;
+}
+
+.textcontact #iconmail:hover {
+  transform: scale(1.5, 1.5);
+  transition: 1s;
+}
+
+.textcontact #iconlinkedin:hover {
+  transform: scale(1.5, 1.5);
+  transition: 1s;
+}
+
+.textcontact #icongit:hover {
+  transform: scale(1.5, 1.5);
+  transition: 1s;
+}
+
+.textcontact #iconlocation:hover {
+  transform: scale(1.5, 1.5);
+  transition: 1s;
+}
+
+.textcontact #iconsmartphone:hover {
+  transform: scale(1.5, 1.5);
+  transition: 1s;
 }
