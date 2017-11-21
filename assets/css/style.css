@@ -87,18 +87,12 @@ PRE LOADER
   color: white;
 }
 
-/* .position {
-  margin-left: -100px;
-  margin-top: 30px;
-}
-*/
-
 .competence {
   margin-top: 15px;
 }
 
 .competence:first-child {
-  margin-top: 0;
+  margin-top: -5px;
 }
 
 img {
@@ -263,6 +257,13 @@ p:last-child {
 /*
 Section
 */
+
+.sections-about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  overflow: hidden;
+}
 
 .sections {
   padding-top: 100px;
@@ -531,7 +532,7 @@ textarea::-ms-input-placeholder
 /* For Menu Section */
 
 .navbar-default {
-  background-color: transparent;
+  background-color: #474747;
   border-color: #e7e7e7;
   margin: 0 auto;
 }

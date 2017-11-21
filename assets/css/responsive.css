@@ -134,4 +134,7 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
   #mail {
     font-size: 20px;
   }
+  .copyright p {
+    font-size: 12px;
+  }
 }
